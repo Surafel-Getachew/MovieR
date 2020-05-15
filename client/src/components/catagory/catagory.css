@@ -1,0 +1,19 @@
+.catagory {
+  padding: 1rem;
+  margin: 0 auto;
+}
+.catagory-button-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.catagory button {
+  background: transparent;
+  padding: 0.5rem;
+}
+
+.catagory button:hover {
+  border-bottom: 3px solid #691125;
+}
+
+/* surafel */

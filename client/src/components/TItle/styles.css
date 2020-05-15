@@ -1,0 +1,12 @@
+
+.movie-title{
+    font-size: 2rem;
+    color:#691125; 
+    letter-spacing: 2px;
+}
+
+.title{
+    border: 1px solid green;
+    padding:2rem;
+    text-align: center;
+}

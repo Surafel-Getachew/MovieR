@@ -1,0 +1,21 @@
+.movie {
+  width: 90vw;
+  margin: 2.5rem auto;
+
+}
+
+.movie-display {
+  flex-basis: calc(50% - 1rem);
+}
+
+.movie-detail {
+  flex-basis: calc(50% - 1rem);
+  align-self: center;
+}
+
+@media screen and (min-width: 776px) {
+  .section-center {
+    display: flex;
+    justify-content: space-between;
+  }
+}

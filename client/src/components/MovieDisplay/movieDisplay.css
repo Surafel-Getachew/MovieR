@@ -1,0 +1,22 @@
+img {
+  width: 100%;
+  display: block;
+}
+
+.movie-card {
+  width: 40%;
+}
+/* origin  https://github.com/Surafel-Getachew/Movie.git (fetch)
+origin  https://github.com/Surafel-Getachew/Movie.git (push) */
+
+
+.movie-info {
+  display: flex;
+  justify-content: space-evenly;
+}
+.movie-title {
+  text-align: center;
+}
+.like-icon {
+  text-align: center;
+}
