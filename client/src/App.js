@@ -1,15 +1,23 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./pages/Landing/Home";
 import Dashboard from "./pages/Dashboard/Dashboard";
+
+// context
+import MovieState from "./context/MovieFormContext/MovieState";
+
 const App = () => {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/dash" component={Dashboard} />
-      </Switch>
-    </BrowserRouter>
+    <MovieState>
+      <BrowserRouter>
+        <Fragment>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/dash" component={Dashboard} />
+          </Switch>
+        </Fragment>
+      </BrowserRouter>
+     </MovieState>
   );
 };
 

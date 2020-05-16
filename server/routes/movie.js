@@ -31,7 +31,7 @@ router.get("/movies", async (req, res) => {
 
 const upload = multer({
   limits: {
-    fileSize: 2000000,
+    fileSize: 20000000,
   },
   // fileFilter(req, file, cb) {
   //     if (!file.orginalname.endWith(".pdf")){
