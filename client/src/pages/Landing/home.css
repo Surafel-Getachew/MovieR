@@ -6,6 +6,7 @@
 
 .movie-display {
   flex-basis: calc(50% - 1rem);
+  border: 3px solid red;
 }
 
 .movie-detail {

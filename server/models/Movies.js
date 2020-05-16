@@ -10,15 +10,15 @@ const Movie_Schema = mongoose.Schema({
         required:true
     },
     description:{
-        type:String,
+         type:String,
         required:true
     },
     likes:{
-        type:Int,
+        type:Number,
     },
     image:{
-        type:String,
-        required:true
+        type:Buffer,
+        // required:true need to change this for production.
     },
     
 })
