@@ -13,6 +13,18 @@ const Movie_Schema = mongoose.Schema({
          type:String,
         required:true
     },
+    genere:{
+        type:String,
+        require:true
+    },
+    starting:{
+        type:String,
+        require:true
+    },
+    maturity:{
+        type:String,
+        require:true
+    },
     likes:{
         type:Number,
     },

@@ -6,7 +6,7 @@ import { ADD_MOVIE, LOAD_MOVIE } from "./types";
 
 const MovieState = (props) => {
   const initialState = {
-    movie:null,
+    movie:[],
     error: null,
   };
   const [state, dispatch] = useReducer(MovieReducer, initialState);
@@ -22,9 +22,9 @@ const MovieState = (props) => {
     dispatch({ type: ADD_MOVIE, payload: res.data });
   };
 
-  const loadMovie = () => {
-    const res = axios.get("/movieR/movie");
-    dispatch({ type: LOAD_MOVIE, payload: res.data });
+  const loadMovie = async() => {
+    const res = await axios.get("/movieR/movie");
+    dispatch({ type: LOAD_MOVIE, payload: res.data.movie });
   };
 
   return (

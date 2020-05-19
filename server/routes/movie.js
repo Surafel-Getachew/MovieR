@@ -42,13 +42,16 @@ const upload = multer({
 });
 // You have to add image later
 router.post("/", upload.single("movieImage"), async (req, res) => {
-  const { title, catagory, description } = req.body;
+  const { title, catagory, genere,description,starting,maturity } = req.body;
   console.log(req.file);
   try {
     const movie = new Movie({
       title,
       catagory,
+      genere,
       description,
+      starting,
+      maturity,
       image: req.file.buffer,
     });
 

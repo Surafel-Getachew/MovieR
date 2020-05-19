@@ -10,10 +10,11 @@
 .catagory button {
   background: transparent;
   padding: 0.5rem;
+  border: none;
+  border-bottom: 1.5px solid #691125;
+  color:white
 }
 
-.catagory button:hover {
-  border-bottom: 3px solid #691125;
-}
+
 
 /* surafel */

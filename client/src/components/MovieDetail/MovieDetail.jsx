@@ -1,24 +1,18 @@
 import React from "react";
-import "./MovieDetail.css"
-const MovieDetail = () => {
+import "./MovieDetail.css";
+const MovieDetail = ({ movies }) => {
   return (
     <div className="movie-detail">
-      <article className = "movie-item">
+      <article className="movie-item">
         <h4>Genere</h4>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>{movies.genere}</p>
         <h4>Description</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ex
-          molestiae odit alias totam expedita?
-        </p>
+        <p>{movies.description}</p>
         <h4>Starting</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quod?
-        </p>
+        <p>{movies.starting}</p>
         <h4>Maturity Rating</h4>
-        <span>18+</span>
+        <span>{movies.maturity}</span>
       </article>
-            
     </div>
   );
 };
