@@ -14,9 +14,15 @@
   align-self: center;
 }
 
+.section-center{
+  margin-bottom: 2rem;
+}
+
 @media screen and (min-width: 776px) {
   .section-center {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 2rem;
     justify-content: space-between;
   }
 }

@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./pages/Landing/Home";
-import Test from "./pages/Landing/Test";
 import Dashboard from "./pages/Dashboard/Dashboard";
 
 // context

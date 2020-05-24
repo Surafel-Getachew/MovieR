@@ -6,6 +6,7 @@ const Test = () => {
   const { loadMovie, movie } = movieContext;
   useEffect(() => {
     loadMovie();
+    // eslint-disable-next-line
   }, []);
   return (
     <div>
